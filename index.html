@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>Authentication is Fun</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="authForm">
+      <h2>Sign Up or Sign In</h2>
+      <input type="email" placeholder="email" id="userEmail" />
+      <input type="password" placeholder="password" id="userPassword" />
+      <br /><br />
+      <button id="signUpButton">Sign Up</button>
+      <button id="signInButton">Sign In</button>
+    </div>
+
+    <div id="secretContent">
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        [class*="col-"] {
+          float: left;
+          padding: 15px;
+        }
+        
+        html {
+          font-family: "Lucida Sans", sans-serif;
+        }
+        
+        .header {
+          background-color: #fffbe4;
+          color: #000000;
+          padding: 15px;
+        }
+        
+        .menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .menu li {
+          padding: 8px;
+          margin-bottom: 7px;
+          background-color: #fffbe4;
+          color: #000000;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        
+        .menu li:hover {
+          background-color: #fffbe4;
+        }
+        
+        .aside {
+          background-color: #fffbe4;
+          padding: 15px;
+          color: #000000;
+          text-align: center;
+          font-size: 14px;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        
+        .footer {
+          background-color: #fffbe4;
+          color: #000000;
+          text-align: center;
+          font-size: 12px;
+          padding: 15px;
+        }
+        
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+        
+        @media only screen and (min-width: 600px) {
+          /* For tablets: */
+          .col-s-1 {width: 8.33%;}
+          .col-s-2 {width: 16.66%;}
+          .col-s-3 {width: 25%;}
+          .col-s-4 {width: 33.33%;}
+          .col-s-5 {width: 41.66%;}
+          .col-s-6 {width: 50%;}
+          .col-s-7 {width: 58.33%;}
+          .col-s-8 {width: 66.66%;}
+          .col-s-9 {width: 75%;}
+          .col-s-10 {width: 83.33%;}
+          .col-s-11 {width: 91.66%;}
+          .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+          /* For desktop: */
+          .col-1 {width: 8.33%;}
+          .col-2 {width: 16.66%;}
+          .col-3 {width: 25%;}
+          .col-4 {width: 33.33%;}
+          .col-5 {width: 41.66%;}
+          .col-6 {width: 50%;}
+          .col-7 {width: 58.33%;}
+          .col-8 {width: 66.66%;}
+          .col-9 {width: 75%;}
+          .col-10 {width: 83.33%;}
+          .col-11 {width: 91.66%;}
+          .col-12 {width: 100%;}
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="header">
+          <h1>JO MALONE</h1>
+        </div>
+        
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="c:\Users\roniel.sagadal\Downloads\sign-up-and-login-main\Main Photo.avif" class="d-block w-100" alt="c:\Users\roniel.sagadal\Downloads\sign-up-and-login-main\Main Photo.avif">
+            </div>
+    
+        </div>
+
+        <div class="row">
+          <div class="col-3 col-s-3 menu">
+            <ul>
+              <li>New Scents</li>
+              <button type="button" class="btn">Click Here</button>
+              <li>Bestsellers</li>
+              <button type="button" class="btn">Click Here</button>
+              <li>Custom Scents</li>
+              <button type="button" class="btn">Click Here</button>
+              <li>Celebrity Choice</li>
+              <button type="button" class="btn">Click Here</button>
+            </ul>
+          </div>
+        
+          <div class="col-6 col-s-9">
+            <h1>Candles</h1>
+            <p>Crafted in England and blended with our iconic fragrances.</p>
+          </div>
+        
+          <div class="col-3 col-s-12">
+            <div class="aside">
+              <h2>What?</h2>
+              <p>JO MALONE CANDLES is a handcrafted scented candle brand.</p>
+              <h2>Where?</h2>
+              <p>We are located in every SM Malls near you.</p>
+              <h2>When?</h2>
+              <p>Jo Malone London is a British multinational cosmetics company, perfume and scented candle brand, founded by Jo Malone in 1990.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card" style="width: 15px 18rem;">
+            <img src="c:\Users\roniel.sagadal\Downloads\sign-up-and-login-main\card 1.avif" class="card-img-top" alt="c:\Users\roniel.sagadal\Downloads\sign-up-and-login-main\card 1.avif">
+            <div class="card-body">
+              <p class="card-text">Blackberry and Bay Classic Candle</p>
+            </div>
+          </div>
+        
+          <div class="card-container">
+            <div class="card" style="width: 15px 18rem;">
+              <img src="c:\Users\roniel.sagadal\Downloads\sign-up-and-login-main\card 2.avif" class="card-img-top" alt="c:\Users\roniel.sagadal\Downloads\sign-up-and-login-main\card 2.avif">
+              <div class="card-body">
+                <p class="card-text">Orange Blossom Classic Candle</p>
+              </div>
+            </div>
+
+        <div class="footer">
+          <p>Jo Malone continues to be better and better for you.</p>
+        </div>
+      
+      
+      
+      <button id="signOutButton">Sign Out</button>
+    </div>
+
+    <script type="module">
+      //Update the below URL with the appropriate version if necessary.
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        onAuthStateChanged,
+        signOut,
+        //Update the below URL with the appropriate version if necessary.
+      } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+      // INSERT YOUR FIREBASE CONFIG OBJECT HERE
+      const firebaseConfig = {
+        apiKey: "AIzaSyBWydNRljxk3wC4nKSfrQvE9Y8283XXQA4",
+  authDomain: "sassagurl-8793a.firebaseapp.com",
+  databaseURL: "https://sassagurl-8793a-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "sassagurl-8793a",
+  storageBucket: "sassagurl-8793a.firebasestorage.app",
+  messagingSenderId: "146593401215",
+  appId: "1:146593401215:web:4faabcd0a9d0e394b5724a"
+};
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+
+      const userEmail = document.querySelector("#userEmail");
+      const userPassword = document.querySelector("#userPassword");
+      const authForm = document.querySelector("#authForm");
+      const secretContent = document.querySelector("#secretContent");
+      const signUpButton = document.querySelector("#signUpButton");
+      const signInButton = document.querySelector("#signInButton");
+      const signOutButton = document.querySelector("#signOutButton");
+
+      secretContent.style.display = "none";
+
+      const userSignUp = async () => {
+        const signUpEmail = userEmail.value;
+        const signUpPassword = userPassword.value;
+        createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user);
+            Swal.fire("Your Account is succesfully created!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const userSignIn = async () => {
+        const signInEmail = userEmail.value;
+        const signInPassword = userPassword.value;
+        signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            Swal.fire("You have signed in successfully!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const checkAuthState = async () => {
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            authForm.style.display = "none";
+            secretContent.style.display = "block";
+          } else {
+            authForm.style.display = "block";
+            secretContent.style.display = "none";
+          }
+        });
+      };
+
+      const userSignOut = async () => {
+        await signOut(auth);
+        Swal.fire("User Logout");
+      };
+
+      checkAuthState();
+
+      signUpButton.addEventListener("click", userSignUp);
+      signInButton.addEventListener("click", userSignIn);
+      signOutButton.addEventListener("click", userSignOut);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/090fe43456.js" crossorigin="anonymous"></script>
+  </body>
+</html>
